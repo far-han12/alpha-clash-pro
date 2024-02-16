@@ -120,29 +120,30 @@
           >
             Life
             <img src="images/Group 23.svg" alt="" />
-            <span>1</span>
+            <span id="current-life">5</span>
           </button>
           <button
             class="btn bg-[#360490] border-0 rounded-full text-white px-4"
           >
             Score
             <img src="images/monetization_on.svg" alt="" />
-            <span>1</span>
+            <span id="current-score">0</span>
           </button>
         </div>
       </section>
       <!-- final score -->
-      <section
+      <section id="final-score"
         class="score flex justify-center items-center min-h-screen hidden"
       >
         <div
           class="text-white text-center space-y-6 bg-[#FFFFFF33] p-4 rounded-lg box-border"
         >
+        <h4 class="text-3xl">Game Over!</h4>
           <h1 class="text-7xl">
-            <span class="font-extrabold">Score:</span> <span class="">14</span>
+            <span class="font-extrabold">Score:</span> <span id="game-score" class="">14</span>
           </h1>
 
-          <button class="btn">Play Again</button>
+          <button class="btn" onclick="play()">Play Again</button>
           <p>Practice will make you a pro</p>
         </div>
       </section>

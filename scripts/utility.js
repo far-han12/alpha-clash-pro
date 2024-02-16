@@ -16,6 +16,20 @@ function addBackGroundColorById(elementId){
     element.classList.add("bg-[#FFA500]")
 
 }
+function removeBackgroundColorById(elementId){
+    const element = document.getElementById(elementId)
+    element.classList.remove("bg-[#FFA500]")
+}
+function getElementvalueById(elementId){
+const element = document.getElementById(elementId)
+const elementvaluetext = element.innerText
+const value = parseInt(elementvaluetext)
+return value
+}
+function setElementValueById(elementId,value){
+    const element=document.getElementById(elementId)
+    element.innerText=value
+}
 
 
 
@@ -27,4 +41,10 @@ function hideElementById(elementId){
 function showElementById(elementId){
     const element = document.getElementById(elementId)
     element.classList.remove("hidden")
+}
+
+function getElementTextById(elementId){
+    const element = document.getElementById(elementId)
+    const text = element.innerText
+    return text
 }
